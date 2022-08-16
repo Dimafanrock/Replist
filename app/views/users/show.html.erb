@@ -1,0 +1,16 @@
+
+    <h2>User login:</h2>
+    <h3><%= @user.login %></h3>
+    <br>
+    <h2>GitName:</h2>
+    <h3><%= @get_user %></h3>
+    <br>
+    <h3>Repositories:</h3>
+    <%  @separat_name.each do |key| %>
+    - <%= key["name"] %>
+    <br> 
+    <% end %>
+    <br> 
+    <a class="btn  btn-outline-secondary "  href="<%= new_user_path %>" role="button">New Search</a>
+
+
